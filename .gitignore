@@ -1,5 +1,5 @@
 # Hotstrings and logfiles definitely contain personal information
-**hotstrings.ahk
+**hotstrings.*
 logs/**
 **logfile*.txt
 
@@ -8,10 +8,10 @@ logs/**
 **.lnk
 
 # Not working yet
-double win+j in vscode.ahk
-vscode pause to rerun.ahk
-*execute last command.ahk
+double win+j in vscode.*
+vscode pause to rerun.*
+*execute last command.*
 
 # Not really working or deprecated, not interesting for a public repo
-AI whisper transcription.ahk
+AI whisper transcription.*
 Archive

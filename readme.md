@@ -18,6 +18,11 @@ This repository contains my everyday autohotkey scripts and shortcuts to make li
 - Open system tray on hover
 - Window logger
 - Autostart selected ahk scripts  
+
+### Executable applications
+Except for `- AI auto complete.ahk`, all scripts are available as executable windows applications in the `compiled-executables` folder. You may need to explicitly trust them in your antivirus software (or just recompile them using akh2exe for enhanced security).
+
+The file *startup/recompile-all-ahk-scripts.ps1* is used to recompile all scripts into executables.
   
 ## Array copy and paste to easily paste single lines from a multiline clipboard successively
 *File "- array copy.ahk" (located in the ahk-scripts folder)*  
