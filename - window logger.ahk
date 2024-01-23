@@ -1,4 +1,4 @@
-﻿; Script Summary-  What It Does:
+﻿; Script Summary /  What It Does:
 ; Window Logging: This AutoHotkey script logs the active window title along with the application process name.
 ; Time Stamping: It records the start and end timestamps for each active window.
 ; Duration Calculation: The script calculates the duration for which each window is active and appends it to the log.

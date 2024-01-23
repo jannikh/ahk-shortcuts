@@ -1,6 +1,18 @@
-import os
+# This Python script is a command-line interface (CLI) tool that uses OpenAI's GPT-3.5-Turbo or GPT-4 models to auto-complete or interpret text.
+# 
+# Here's a breakdown of its functionality:
+# 1. Auto-completion: Given a sentence fragment, the tool completes the sentence using the AI model. The completion is designed to be accurate and concise.
+# 2. Interpretation: Given a sentence fragment, the tool provides an interpretation or answer using the AI model. The response is designed to be exact and concise.
+# The tool accepts several command-line arguments:
+# text: The beginning of the text to complete or interpret. This is a required argument.
+# -i or --interpret: If this flag is set, the tool will interpret the input text instead of auto-completing it.
+# -f or --force: If this flag is set, the tool will allow answers that modify the start string.
+# -c or --copy: If this flag is set, the tool will copy the result to the clipboard.
+# -3 or --gpt3: If this flag is set, the tool will use the GPT-3.5-Turbo model. (default model as of now, so this flag is not necessary)
+# -4 or --gpt4: If this flag is set, the tool will use the GPT-4 model.
+# By default, the tool uses the GPT-3.5-Turbo model for auto-completion. If neither -3 nor -4 is set, the tool defaults to GPT-3.5-Turbo. If both -3 and -4 are set, the tool uses GPT-4.
+
 from openai import OpenAI
-import tiktoken
 import datetime
 import argparse
 from os.path import exists
