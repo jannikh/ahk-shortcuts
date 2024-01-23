@@ -5,7 +5,7 @@
 ; Idle State Detection: The script detects if the computer is idle for more than one minute and appends "\t(IDLE)" to the window title.
 ; Logging Breaks: If the active window remains the same but exceeds a certain time interval, it logs a break in the form of empty lines.
 ; Title Processing: The script processes the window title to handle specific cases. For instance, if the window title contains "Mozilla Firefox Private Browsing", it is replaced with the exact string "Mozilla Firefox Private Browsing".
-; VLC Logging: If the active window is VLC media player and it remains active for more than 10 seconds, the script logs this activity to a separate file named .\vlclogfile.txt.
+; VLC Logging: If the active window is VLC media player and it remains active for more than 10 seconds, the script logs this activity to a separate file named ..\logs\vlclogfile.txt.
 ; Default Values: In cases where the window title or process name is empty, the script defaults these values to "Windows" and "System" respectively. This ensures that all activities are logged, even if the window title or process name cannot be retrieved.
 ; 
 ; Settings:
@@ -38,7 +38,7 @@ currentEndTimestamp := CurrentTime
 currentStartTickCount := A_TickCount
 lastInvocationTickCount := 0
 
-FileAppend, `n`n`n`n`nReinitialized autohotkey script, .\windowlogfile.txt
+FileAppend, `n`n`n`n`nReinitialized autohotkey script, ..\logs\windowlogfile.txt
 
 return
 
@@ -100,15 +100,15 @@ LogActiveWindow:
                 currentProcessName = System
             }
 
-            FileAppend, %currentStartTimestamp% - %currentEndTimestamp%	%durationString%	%currentWindowTitle% (%currentProcessName%)%idleInfo%`n, .\windowlogfile.txt
+            FileAppend, %currentStartTimestamp% - %currentEndTimestamp%	%durationString%	%currentWindowTitle% (%currentProcessName%)%idleInfo%`n, ..\logs\windowlogfile.txt
 
             if (currentProcessName == "vlc" AND InStr(currentWindowTitle, " - VLC media player") AND seconds > 10) {
-                FileAppend, %currentStartTimestamp% - %currentEndTimestamp%	%durationString%	%currentWindowTitle% (%currentProcessName%)%idleInfo%`n, .\vlclogfile.txt
+                FileAppend, %currentStartTimestamp% - %currentEndTimestamp%	%durationString%	%currentWindowTitle% (%currentProcessName%)%idleInfo%`n, ..\logs\vlclogfile.txt
             }
 
             ; Log five empty lines if the interval has passed for the same title
             if (timeSinceLastCheck > (checkInterval + 1000)) {
-                FileAppend, `n`n`n`n`n, .\windowlogfile.txt
+                FileAppend, `n`n`n`n`n, ..\logs\windowlogfile.txt
             }
         ; }
         

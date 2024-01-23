@@ -1,8 +1,9 @@
 # AutoHotkey Scripts
 
-This repository contains my everyday autohotkey scripts and shortcuts to make life easier and gain hyperspeed working on your computer 🚀
+This repository contains my everyday autohotkey scripts and shortcuts to make life easier and gain hyperspeed working on your computer
+
 <p align="center">
-    <img src="ahk-repo.webp" alt="The image representing the essence of your repository with everyday AutoHotkey shortcuts is ready. It visually captures the dynamic and efficient workspace empowered by the various functionalities of your scripts. Feel free to take a look at it above." width="80%" style="max-width: 500px; border-radius: 15px"/>
+    <img src="assets\ahk-repo.webp" alt="The image representing the essence of your repository with everyday AutoHotkey shortcuts is ready. It visually captures the dynamic and efficient workspace empowered by the various functionalities of your scripts. Feel free to take a look at it above." width="80%" style="max-width: 420px; border-radius: 15px"/>
 </p>
    
 ### Available scripts and functionalities:
@@ -19,7 +20,7 @@ This repository contains my everyday autohotkey scripts and shortcuts to make li
 - Autostart selected ahk scripts  
   
 ## Array copy and paste to easily paste single lines from a multiline clipboard successively
-*File "- array copy.ahk"*  
+*File "- array copy.ahk" (located in the ahk-scripts folder)*  
   
 This AutoHotkey script allows you to copy or cut multiple lines of text and paste them individually. This can for example be used when you have to fill out a form with a list of values.
 
@@ -35,7 +36,7 @@ If the last element is reached, it disables the array copy mode and displays a w
   
   
 ## Append to clipboard
-*File "- ctrl+alt+c append.ahk"*  
+*File "- ctrl+alt+c append.ahk" (located in the ahk-scripts folder)*  
   
 This AutoHotkey script enhances the clipboard functionality by appending newly copied content to the existing clipboard content, instead of replacing it.
 
@@ -50,7 +51,7 @@ This is useful for accumulating multiple copied texts into one clipboard for a c
   
 
 ## AI auto completion and command execution using GPT-3.5 or GPT-4
-*File "- AI auto complete.ahk"*  
+*File "- AI auto complete.ahk" (located in the ahk-scripts folder)*  
   
 This autohotkey script is used to auto-complete or interpret given text using GPT-3.5 or GPT-4  
 
@@ -62,9 +63,10 @@ This autohotkey script is used to auto-complete or interpret given text using GP
 
 The script always tries to copy the currently selected text or the active line that is being typed upon  
 
-Uses the `auto-completion.py` which in itself can be a useful tool with CLI commands to be integrated anywhere:
+Uses the `python-scripts\auto-completion.py` which in itself can be a useful tool with CLI commands to be integrated anywhere:
 
 ### *"auto-completion.py"*
+(Located in the `python-scripts` folder)
 
 This Python script is a command-line interface (CLI) tool that uses OpenAI's GPT-3.5-Turbo or GPT-4 models to auto-complete or interpret text.
 
@@ -88,7 +90,7 @@ The tool accepts several command-line arguments:
   
   
 ## Collection of useful shortcuts, mostly related to browser interactions
-*File "- useful all day shortcuts.ahk"*  
+*File "- useful all day shortcuts.ahk" (located in the ahk-scripts folder)*  
   
 This AutoHotkey script provides several productivity shortcuts (all browser interactions are using Firefox):  
 
@@ -116,7 +118,7 @@ Pressing `Ctrl + L` twice in quick succesion in firefox copies the URL then `Alt
   
   
 ## Copy file names
-*File "double F2.ahk"*  
+*File "double F2.ahk" (located in the ahk-scripts folder)*  
   
 pressing `F2` twice in a row copies the file name and `alt + tabs`  
 
@@ -125,7 +127,7 @@ This enables you to easily copy the file name of a selected file in Windows Expl
   
   
 ## Play / pause media
-*File "- RCtrl+F12 = play-pause.ahk"*  
+*File "- RCtrl+F12 = play-pause.ahk" (located in the ahk-scripts folder)*  
   
 This script adds a play / pause hotkey, triggered by `right control + F12`
   
@@ -133,7 +135,7 @@ This script adds a play / pause hotkey, triggered by `right control + F12`
   
   
 ## VLC subtitle activation
-*File "vlc subtitle del hotkey.ahk"*  
+*File "vlc subtitle del hotkey.ahk" (located in the ahk-scripts folder)*  
   
 This AutoHotkey script enhances the functionality of the `Del` key in VLC media player. 
 
@@ -152,7 +154,7 @@ pressing `Del` again lets you select the subtitle file (this behavior might alre
 
   
 ## System tray focus and opening
-*File "- win+b plus enter.ahk"*  
+*File "- win+b plus enter.ahk" (located in the ahk-scripts folder)*  
   
 Pressing `Windows key + B` will focus the system tray and open it automatically.  
 
@@ -161,7 +163,7 @@ Pressing it again will focus and open the first icon in the system tray.
    
   
 ## Open system tray on hover
-*File "automatically open system tray.ahk"*  
+*File "automatically open system tray.ahk" (located in the ahk-scripts folder)*  
   
 This AutoHotkey script automatically shows and hides the system tray based on the mouse position.  
 
@@ -173,7 +175,7 @@ When the mouse moves out of a specific "hide" area (defined by xhide and yhide),
   
   
 ## Window logger
-*File "- window logger.ahk"*  
+*File "- window logger.ahk" (located in the ahk-scripts folder)*  
   
 **Window Logging**: This AutoHotkey script logs the active window title along with the application process name.  
 
@@ -206,7 +208,7 @@ Five empty lines are appended to indicate a break in logging activities when the
   
   
 ## Autostart selected ahk scripts
-*File "\_AutoStart_all_ahk_scripts_that_start_with_-.ps1"*  
+*File "\_AutoStart_all_ahk_scripts_that_start_with_-.ps1" (located in the startup folder)*  
   
 This script will launch all .ahk files in the same directory as this script that start with a "-" 
 

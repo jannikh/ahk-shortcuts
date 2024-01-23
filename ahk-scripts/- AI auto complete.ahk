@@ -90,7 +90,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
     }
 
     ; Replace %CLIPBOARD% in the command with the actual clipboard content
-    cmdCommand := "py .\auto-completion.py """ clipboard """ --force --copy"
+    cmdCommand := "py ..\python-scripts\auto-completion.py """ clipboard """ --force --copy"
 	if shiftFlag {
 		cmdCommand := cmdCommand . " --gpt4"
 	}

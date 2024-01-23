@@ -1,13 +1,11 @@
+# Hotstrings and logfiles definitely contain personal information
+**hotstrings.ahk
+logs/**
+**logfile*.txt
+
 # Trivial files that link to specific locations on my windows machine
 **.cmd
 **.lnk
-
-# Hotstrings definitely contain personal information
-**hotstrings.ahk
-
-# Logfiles may contain personal information
-**logfile*.txt
-pricing-history.txt
 
 # Not working yet
 double win+j in vscode.ahk
@@ -17,6 +15,3 @@ vscode pause to rerun.ahk
 # Not really working or deprecated, not interesting for a public repo
 AI whisper transcription.ahk
 Archive
-
-# Specific workarounds for broken hardware
-fix mouse double right clicking.ahk
