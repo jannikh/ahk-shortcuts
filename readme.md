@@ -3,7 +3,7 @@
 This repository contains my everyday autohotkey scripts and shortcuts to make life easier and gain hyperspeed working on your computer
 
 <p align="center">
-    <img src="assets\ahk-repo.webp" alt="The image representing the essence of your repository with everyday AutoHotkey shortcuts is ready. It visually captures the dynamic and efficient workspace empowered by the various functionalities of your scripts. Feel free to take a look at it above." width="80%" style="max-width: 420px; border-radius: 15px"/>
+    <img src="assets\ahk-repo2.png" alt="The image representing the essence of your repository with everyday AutoHotkey shortcuts is ready. It visually captures the dynamic and efficient workspace empowered by the various functionalities of your scripts. Feel free to take a look at it above." width="80%" style="max-width: 420px; border-radius: 15px"/>
 </p>
    
 ### Available scripts and functionalities:
